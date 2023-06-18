@@ -32,8 +32,10 @@ by CMAKE:
 ```cmake
 FetchContent_Declare(
     mttmath
-    GIT_REPOSITORY https://github.com/matto1matteo/mttmath
-    GIT_TAG <version> # e.g. 1.0.0
+    GIT_REPOSITORY https://github.com/matto1matteo/mttmath.git
+    GIT_TAG <version> # e.g. 1.0.0, or the commit sha
     OVERRIDE_FIND_PACKAGE
 )
+
+find_package(mttmath)
 ```
